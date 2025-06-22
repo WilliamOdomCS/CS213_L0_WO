@@ -7,28 +7,21 @@ import javax.swing.ImageIcon;
 
 
 public class Main {
-
-
     public static void main(String[] args) {
-           String name, strOutput, msgTitle;
-           int num1, num2, sum;
+        String name, strOutput, msgTitle;
+        int num1, num2, sum;
 
-            Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-            //ImageIcon icon = new ImageIcon("src/JavaLogo.png");
-
-            name = JOptionPane.showInputDialog("What is your full name?");
-
+        name = JOptionPane.showInputDialog("What is your full name?");
 
         //JOptionPane.showInputDialog returns a string; we need to convert it to a number before storing in int
         num1= Integer.parseInt(JOptionPane.showInputDialog("Enter first number"));
         num2 = Integer.parseInt(JOptionPane.showInputDialog("Enter second number"));
 
-
-            sum = num1 + num2;
-            msgTitle ="Java program by " + name + "!";
-            strOutput="The sum of " + num1 +
-                     " and " + num2 + " is " + sum;
+        sum = num1 + num2;
+        msgTitle ="Java program by " + name + "!";
+        strOutput="The sum of " + num1 + " and " + num2 + " is " + sum;
 
         //outputs to a console
         System.out.println(msgTitle +"\n" + strOutput);
@@ -44,7 +37,7 @@ public class Main {
 
         strOutput="You selected: ";
 
-        //switch statement -fall through  demo
+        //switch statement -fall through demo
         switch (result)
         {
             case JOptionPane.YES_OPTION: strOutput += "YES";
@@ -52,10 +45,10 @@ public class Main {
             default: strOutput += "\nI am going to exit anyway :) ";
         }
 
- System.out.println(strOutput);
-            scanner.close();
-        }
+        System.out.println(strOutput);
+        scanner.close();
     }
+}
 
 /*
 Java program by William Odom!
